@@ -3,25 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
-}
-.background {
-  @apply bg-[url('src/assets/grid.svg')];
-}
-.headerText {
-  @apply bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-3xl font-extrabold;
-}
-.nav-bg-md {
-  @apply p-6 w-[100%] bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60;
-} */
 .app {
   width: 100vw;
   min-height: 100vh;
   position: fixed;
   display: flex;
   justify-content: center;
-  padding: 120px 24px 160px 24px;
+  /* padding: 120px 24px 160px 24px; */
   pointer-events: none;
 }
 
@@ -70,4 +58,14 @@
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
+}
+.head_text {
+  @apply text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+.profile {
+  position: absolute;
+  z-index: 4;
 }
